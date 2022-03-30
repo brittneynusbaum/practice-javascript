@@ -88,7 +88,7 @@ function awesomeSauce(strings) {
   });
   console.log(newArray);
 }
-awesomeSauce(['a', 'b', 'c', 'd', 'e']);
+// awesomeSauce(['a', 'b', 'c', 'd', 'e']);
 
 // Start with the hash: item_amounts = {chair: 5, table: 2}
 // Someone just bought two chairs. Change the hash such that the chair amount is 3.
@@ -106,3 +106,25 @@ awesomeSauce(['a', 'b', 'c', 'd', 'e']);
 
 // Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 // For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
+
+// 1) Write a function that takes in an array of numbers and returns its sum.
+function sum(numbers) {
+  var i = 0;
+  var sum = 0;
+  numbers.forEach(function(number) {
+    sum += number;
+    i++;
+  });
+  return sum;
+}
+console.log(sum([1, 2, 3]));
+
+// 2) Write a function that takes in an array of strings and returns the smallest string.
+// 3) Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+// 4) Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
+// 5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
+// 6) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).
+// 7) Write a function that takes in an array of numbers and returns the two smallest numbers.
+// 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
+// 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
+// 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.

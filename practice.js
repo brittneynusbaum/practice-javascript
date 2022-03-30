@@ -62,10 +62,19 @@ function everyOtherNumberToOneHundred() {
     i += 2;
   }
 }
-everyOtherNumberToOneHundred();
+// everyOtherNumberToOneHundred();
 
 // Write a method that accepts an array of numbers as a parameter, and counts how many 55’s there are in the array.
-
+function numberCountsFiftyFive(numbers) {
+  var count = 0;
+  numbers.forEach(function(number) {
+    if (number === 55) {
+      count++;
+    }
+  });
+  console.log(count);
+}
+numberCountsFiftyFive([55, 1, 3, 4, 55])
 
 // Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
 // For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].

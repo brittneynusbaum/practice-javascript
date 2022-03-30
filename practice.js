@@ -78,9 +78,20 @@ function twoSmallest(numbers) {
   });
   return [smallest, smallestTwo];
 }
-console.log(twoSmallest([30, 13, 12, 41]));
+// console.log(twoSmallest([30, 13, 12, 41]));
 
 // 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
+function countZeros(numbers) {
+  var count = 0;
+  numbers.forEach(function(number) {
+    if (number === 0) {
+      count++;
+    }
+  });
+  return count;
+}
+console.log(countZeros([0, 11, 20, 3, 5, 30, 30, 9]));
+
 // 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
 // 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
 // Write a method that prints out the numbers 1 to 1000 that are divisible by 3.

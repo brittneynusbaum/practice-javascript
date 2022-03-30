@@ -60,10 +60,26 @@ function productNumbers(numbers) {
   });
   return product;
 }
-console.log(productNumbers([2, 2, 3]));
-
+// console.log(productNumbers([2, 2, 3]));
 
 // 7) Write a function that takes in an array of numbers and returns the two smallest numbers.
+function twoSmallest(numbers) {
+  var smallest = numbers[0];
+  var smallestTwo = numbers[0];
+  numbers.forEach(function(number) {
+    if (number < smallest && number !== smallestTwo) {
+      smallest = number;
+    }
+  });
+  numbers.forEach(function(number) {
+    if (number < smallestTwo && number !== smallest) {
+      smallestTwo = number;
+    }
+  });
+  return [smallest, smallestTwo];
+}
+console.log(twoSmallest([30, 13, 12, 41]));
+
 // 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
 // 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
 // 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.

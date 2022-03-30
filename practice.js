@@ -50,10 +50,19 @@ function beginWithA(strings) {
 function sepratedByCommas(strings) {
   return strings.join(",");
 }
-console.log(sepratedByCommas(['a', 'p', 'p', 'l', 'e', 's']));
-
+// console.log(sepratedByCommas(['a', 'p', 'p', 'l', 'e', 's']));
 
 // 6) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).
+function productNumbers(numbers) {
+  var product = 1;
+  numbers.forEach(function(number) {
+    product *= number;
+  });
+  return product;
+}
+console.log(productNumbers([2, 2, 3]));
+
+
 // 7) Write a function that takes in an array of numbers and returns the two smallest numbers.
 // 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
 // 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.

@@ -22,9 +22,18 @@ function smallestString(strings) {
   });
   return smallest;
 }
-console.log(smallestString(["hello", "goodbye", "hi", "hey"]));
+// console.log(smallestString(["hello", "goodbye", "hi", "hey"]));
 
 // 3) Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+function reverse(numbers) { 
+  var reverseArray = [];
+  numbers.forEach(function(number) {
+    reverseArray.unshift(number);
+  });
+  return reverseArray;
+}
+console.log(reverse([1, 2, 3]));
+
 // 4) Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
 // 5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
 // 6) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).

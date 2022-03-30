@@ -32,9 +32,20 @@ function reverse(numbers) {
   });
   return reverseArray;
 }
-console.log(reverse([1, 2, 3]));
+// console.log(reverse([1, 2, 3]));
 
 // 4) Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
+function beginWithA(strings) {
+  var count = 0;
+  strings.forEach(function(string) {
+    if (string[0] === 'a') {
+      count++;
+    }
+  });
+  return count;
+}
+console.log(beginWithA(['apple', 'banana', 'around', 'log', 'animal']));
+
 // 5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
 // 6) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).
 // 7) Write a function that takes in an array of numbers and returns the two smallest numbers.

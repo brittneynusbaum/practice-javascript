@@ -1,3 +1,37 @@
+// 1) Write a function that takes in an array of numbers and returns its sum.
+function sum(numbers) {
+  var i = 0;
+  var sum = 0;
+  numbers.forEach(function(number) {
+    sum += number;
+    i++;
+  });
+  return sum;
+}
+// console.log(sum([1, 2, 3]));
+
+// 2) Write a function that takes in an array of strings and returns the smallest string.
+function smallestString(strings) {
+  var i = 0;
+  var smallest = strings[i];
+  strings.forEach(function(string) {
+    if (string.length < smallest.length) {
+      smallest = string;
+    }
+    i++;
+  });
+  return smallest;
+}
+console.log(smallestString(["hello", "goodbye", "hi", "hey"]));
+
+// 3) Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+// 4) Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
+// 5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
+// 6) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).
+// 7) Write a function that takes in an array of numbers and returns the two smallest numbers.
+// 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
+// 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
+// 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
 // Write a method that prints out the numbers 1 to 1000 that are divisible by 3.
 function printNumbersDivisibleByThree() {
   var index = 1;
@@ -107,24 +141,3 @@ function awesomeSauce(strings) {
 // Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 // For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
 
-// 1) Write a function that takes in an array of numbers and returns its sum.
-function sum(numbers) {
-  var i = 0;
-  var sum = 0;
-  numbers.forEach(function(number) {
-    sum += number;
-    i++;
-  });
-  return sum;
-}
-console.log(sum([1, 2, 3]));
-
-// 2) Write a function that takes in an array of strings and returns the smallest string.
-// 3) Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
-// 4) Write a function that takes in an array of words and returns the number of words that begin with the letter “a”.
-// 5) Write a function that takes in an array of strings and joins them together to make a single string separated by commas.
-// 6) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).
-// 7) Write a function that takes in an array of numbers and returns the two smallest numbers.
-// 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
-// 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
-// 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.

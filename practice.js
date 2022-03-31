@@ -1,3 +1,20 @@
+// Write JavaScript code using the setTimeout function to print 3 lines asynchronously. Use anonymous functions in your setTimeout calls.
+
+// Nested callbacks
+
+setTimeout(function() {
+  console.log('First task done!');
+  setTimeout(function() {
+    console.log('Second task done!');
+    setTimeout(function() {
+      console.log('Third task done!');
+    }, 2000);
+  }, 2000);
+}, 2000);
+
+
+
+
 // 1) Write a function that takes in an array of numbers and returns its sum.
 function sum(numbers) {
   var i = 0;
@@ -90,10 +107,20 @@ function countZeros(numbers) {
   });
   return count;
 }
-console.log(countZeros([0, 11, 20, 3, 5, 30, 30, 9]));
+// console.log(countZeros([0, 11, 20, 3, 5, 30, 30, 9]));
 
 // 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
+function biggerthanten(numbers) {
+  numbers.forEach(function(number) {
+
+  });
+}
+
+
 // 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
+
+
+
 // Write a method that prints out the numbers 1 to 1000 that are divisible by 3.
 function printNumbersDivisibleByThree() {
   var index = 1;

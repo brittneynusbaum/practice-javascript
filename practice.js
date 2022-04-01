@@ -1,3 +1,8 @@
+
+
+
+
+
 // Write JavaScript code using the setTimeout function to print 3 lines asynchronously. Use anonymous functions in your setTimeout calls.
 
 // Nested callbacks
@@ -11,9 +16,6 @@ setTimeout(function() {
     }, 2000);
   }, 2000);
 }, 2000);
-
-
-
 
 // 1) Write a function that takes in an array of numbers and returns its sum.
 function sum(numbers) {
